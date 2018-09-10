@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buscar"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/buscar"
+    />
+
+    <item
+        android:id="@+id/temas"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/temas"
+        />
+
+    <item
+        android:id="@+id/grupos"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="@string/grupos"
+        />
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/perfil"
+        />
+</menu>
