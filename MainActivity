@@ -1,0 +1,59 @@
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+
+
+    BottomNavigationView bottomNavigationView;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        bottomNavigationView = findViewById(R.id.boton_navegacion);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        //SELECION PARA LA VENTANA PRINCIPAL
+        bottomNavigationView.setSelectedItemId(R.id.temas);
+
+
+    }
+    //DECLARAS FRAGMENTS
+    Buscar buscarFragment = new Buscar();
+    Temas temasFragment = new Temas();
+    Grupos gruposFragment = new Grupos();
+    Perfil perfilFragment = new Perfil();
+    
+    //SE IMPLENENTA EL METODO PARA EJECUTAR LOS EVENTOS
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        
+        switch (item.getItemId()){
+            //LAYOUT
+            case R.id.buscar:
+                getSupportFragmentManager().beginTransaction().
+                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida). //ANIMACIONES PARA UN MEJOR EFECTO
+                replace(R.id.contenedor, buscarFragment).commit(); //REMPLAZO DEL FRAGMENTO
+                return true;
+
+            case R.id.temas:
+                getSupportFragmentManager().beginTransaction().
+                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                replace(R.id.contenedor, temasFragment).commit();
+                return true;
+
+            case R.id.grupos:
+                getSupportFragmentManager().beginTransaction().
+                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                replace(R.id.contenedor, gruposFragment).commit();
+                return true;
+
+            case R.id.perfil:
+                getSupportFragmentManager().beginTransaction().
+                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                replace(R.id.contenedor, perfilFragment).commit();
+                return true;
+
+        }
+        return false;
+    }
+}
