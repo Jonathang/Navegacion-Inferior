@@ -1,4 +1,6 @@
-en la carpeta de drawable hay que hacer unas imagenes que son los que aparecen en la barra y se deben de incluir como imagenes en esta
+//app/res/drawable/ic_cancel_black_24dp.xml
+
+En la carpeta de drawable hay que hacer unas imagenes que son los que aparecen en la barra y se deben de incluir como imagenes en esta
 carpeta como ---> new
                    -->vector Asset
                    
