@@ -1,4 +1,4 @@
-
+//Cuando se crea el fragment es vacio sin callback sin incluide
 public class Buscar extends Fragment {
 
 
