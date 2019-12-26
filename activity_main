@@ -27,12 +27,7 @@
         app:menu="@menu/navegacion_inferior"
         app:itemIconTint="@drawable/item_seleccionado"
         app:itemTextColor="@drawable/item_seleccionado"
-        android:background="@color/colorBlanco"
-
-
-        />
-
-
+        android:background="@color/colorBlanco"/>
 
 
 </android.support.constraint.ConstraintLayout>
