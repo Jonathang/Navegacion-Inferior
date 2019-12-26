@@ -31,25 +31,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             //LAYOUT
             case R.id.buscar:
                 getSupportFragmentManager().beginTransaction().
-                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida). //ANIMACIONES PARA UN MEJOR EFECTO
+                setCustomAnimations(R.anim.animacion_entrada, R.anim.animacion_salida). //ANIMACIONES PARA UN MEJOR EFECTO
                 replace(R.id.contenedor, buscarFragment).commit(); //REMPLAZO DEL FRAGMENTO
                 return true;
 
             case R.id.temas:
                 getSupportFragmentManager().beginTransaction().
-                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                setCustomAnimations(R.anim.animacion_entrada, R.anim.animacion_salida).
                 replace(R.id.contenedor, temasFragment).commit();
                 return true;
 
             case R.id.grupos:
                 getSupportFragmentManager().beginTransaction().
-                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                setCustomAnimations(R.anim.animacion_entrada, R.anim.animacion_salida).
                 replace(R.id.contenedor, gruposFragment).commit();
                 return true;
 
             case R.id.perfil:
                 getSupportFragmentManager().beginTransaction().
-                setCustomAnimations(R.anim.menu_entrada, R.anim.menu_salida).
+                setCustomAnimations(R.anim.animacion_entrada, R.anim.animacion_salida).
                 replace(R.id.contenedor, perfilFragment).commit();
                 return true;
 
